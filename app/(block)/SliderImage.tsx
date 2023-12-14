@@ -45,8 +45,8 @@ const SliderImage = () => {
     }
 
     const spanClick = (i:number)=>{
-        const swich = i+1
-        setCount(swich)
+        setCount(i+1)
+        setAnimate('animate-none')
     }
 
     return ( 
