@@ -13,11 +13,19 @@ const SliderImage = () => {
     const [slider,setSlider] = useState ([1,2,3,4,5,6])
     const [animate,setAnimate] = useState ('animate-none')
     const [myImage,setMyImage] = useState <sliderImageType|undefined> ()
+    const [load,setLoad] = useState<boolean>()
 
      useEffect(()=>{
-        ApiCaller().getSliderImage()
-            .then(res => setMyImage(res.data))
-     },[setMyImage])
+            setLoad(true)
+            ApiCaller().getSliderImage()
+            .then(res => {
+                setTimeout(()=>{
+                    setMyImage(res.data)
+                    setLoad(false)
+                },1500)
+            })
+     },[])
+     console.log(count);
      
     const arrowRight = () => {
         setAnimate('animate-sliderRight')
@@ -36,37 +44,56 @@ const SliderImage = () => {
         }
     }
 
-    
+    const spanClick = (i:number)=>{
+        const swich = i+1
+        setCount(swich)
+    }
 
     return ( 
         <div className="w-full">
-            <div className="flex w-full relative flex-col">
+            <div className={`${load && 'h-64 animate-pulse bg-slate-200'} flex w-full relative flex-col`}>
                 {myImage?.filter((item)=>item.id == count).map((item)=>(
                     <div key={item.id} className="">
                         <Image
                             style={{
                                 width: '100%',
-                                height: '100%',
+                                height: 'auto',
                             }}
                             width={1500}
                             height={1500}
-                            alt='alaki'
+                            alt='slider'
                             src={item.src}
                             className={`${animate}`}
                         />
                     </div>
                 ))}
                     <div className="flex flex-wrap w-full h-full absolute px-10 justify-between items-center">
-                        <button onClick={arrowLeft} className="p-2 rounded-full duration-200 delay-100 text-white hover:text-black hover:bg-white hover:bg-opacity-50">
+                        <button 
+                           onClick={arrowLeft} 
+                           className="p-2 rounded-full duration-200 delay-100 text-white hover:text-black hover:bg-white hover:bg-opacity-50"
+                        >
                             <FaArrowLeft />
                         </button>
-                        <button onClick={arrowRight} className="p-2 rounded-full duration-200 delay-100 text-white hover:text-black hover:bg-white hover:bg-opacity-50">
+                        <button 
+                           onClick={arrowRight} 
+                           className="p-2 rounded-full duration-200 delay-100 text-white hover:text-black hover:bg-white hover:bg-opacity-50"
+                        >
                             <FaArrowRight/>
                         </button>
                         <div className="w-full flex justify-center  items-center absolute bottom-0 right-0 ">
-                           <div className="flex gap-5 px-2 py-1 mb-1.5 rounded-full bg-white bg-opacity-40">
+                           <div className="flex gap-1 px-2 py-1 mb-1.5 rounded-full bg-white bg-opacity-40">
                                 {slider.map((item,i)=>(
-                                  <span key={i} className={`${count == i+1 && 'bg-black bg-opacity-50'} w-2 h-2 rounded-full border border-black`}></span>
+                                  <div
+                                    onClick={()=>spanClick(i)}
+                                    key={i} 
+                                    className="p-2 flex cursor-pointer"
+                                  >
+                                        <span
+                                        className={`${count == i+1 && 'bg-black bg-opacity-50'} w-2 h-2 rounded-full border border-black`}
+                                        >
+
+                                        </span>
+                                  </div>
                                 ))}
                             </div>
                            </div>
