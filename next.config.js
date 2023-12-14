@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'dkstatics-public.digikala.com',
+            port: '',
+            pathname: '/digikala-adservice-banners/**',
+          },
+        ],
+      },
+}
 
 module.exports = nextConfig
