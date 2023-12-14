@@ -1,0 +1,28 @@
+{
+    "sliderImage":[
+        {
+            "id":1,
+            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/565b6718a28465865589c6b8479f7d0bf90331db_1671873633.jpg?x-oss-process=image/quality,q_95/format,webp"
+        },
+        {
+            "id":2,
+            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/35bda34c61b5ba0a71900883cf55e0052c6e8aa3_1702466771.jpg?x-oss-process=image/quality,q_95/format,webp"
+        },
+        {
+            "id":3,
+            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/a2a814f39208fd6821ef1c4a01945d06a726da61_1699968028.jpg?x-oss-process=image/quality,q_95/format,webp"
+        },
+        {
+            "id":4,
+            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/0e4feb8d6a9ba6fe13cc347b322ddb444199ea8b_1701942736.jpg?x-oss-process=image/quality,q_95/format,webp"
+        },
+        {
+            "id":5,
+            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/95d25a8add72b30c281874df247dc732698f7ea2_1702464535.gif?x-oss-process=image?x-oss-process=image/format,webp"
+        },
+        {
+            "id":6,
+            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/e8a20c5ef93963f3afcbbb773dd00e508c1df624_1702204057.jpg?x-oss-process=image/quality,q_95/format,webp"
+        }
+    ]
+}
