@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
+import allSlice from './faeture/allSlice'
 // ...
 
 export const store = configureStore({
   reducer: {
-  }
+    all : allSlice
+  },
 })
 
 
