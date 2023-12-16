@@ -1,28 +1,115 @@
 {
-    "sliderImage":[
-        {
-            "id":1,
-            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/565b6718a28465865589c6b8479f7d0bf90331db_1671873633.jpg?x-oss-process=image/quality,q_95/format,webp"
-        },
-        {
-            "id":2,
-            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/35bda34c61b5ba0a71900883cf55e0052c6e8aa3_1702466771.jpg?x-oss-process=image/quality,q_95/format,webp"
-        },
-        {
-            "id":3,
-            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/a2a814f39208fd6821ef1c4a01945d06a726da61_1699968028.jpg?x-oss-process=image/quality,q_95/format,webp"
-        },
-        {
-            "id":4,
-            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/0e4feb8d6a9ba6fe13cc347b322ddb444199ea8b_1701942736.jpg?x-oss-process=image/quality,q_95/format,webp"
-        },
-        {
-            "id":5,
-            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/95d25a8add72b30c281874df247dc732698f7ea2_1702464535.gif?x-oss-process=image?x-oss-process=image/format,webp"
-        },
-        {
-            "id":6,
-            "src":"https://dkstatics-public.digikala.com/digikala-adservice-banners/e8a20c5ef93963f3afcbbb773dd00e508c1df624_1702204057.jpg?x-oss-process=image/quality,q_95/format,webp"
-        }
-    ]
+  "sliderImage": [
+    {
+      "id": 1,
+      "src": "https://dkstatics-public.digikala.com/digikala-adservice-banners/565b6718a28465865589c6b8479f7d0bf90331db_1671873633.jpg?x-oss-process=image/quality,q_95/format,webp"
+    },
+    {
+      "id": 2,
+      "src": "https://dkstatics-public.digikala.com/digikala-adservice-banners/35bda34c61b5ba0a71900883cf55e0052c6e8aa3_1702466771.jpg?x-oss-process=image/quality,q_95/format,webp"
+    },
+    {
+      "id": 3,
+      "src": "https://dkstatics-public.digikala.com/digikala-adservice-banners/a2a814f39208fd6821ef1c4a01945d06a726da61_1699968028.jpg?x-oss-process=image/quality,q_95/format,webp"
+    },
+    {
+      "id": 4,
+      "src": "https://dkstatics-public.digikala.com/digikala-adservice-banners/0e4feb8d6a9ba6fe13cc347b322ddb444199ea8b_1701942736.jpg?x-oss-process=image/quality,q_95/format,webp"
+    },
+    {
+      "id": 5,
+      "src": "https://dkstatics-public.digikala.com/digikala-adservice-banners/95d25a8add72b30c281874df247dc732698f7ea2_1702464535.gif?x-oss-process=image?x-oss-process=image/format,webp"
+    },
+    {
+      "id": 6,
+      "src": "https://dkstatics-public.digikala.com/digikala-adservice-banners/e8a20c5ef93963f3afcbbb773dd00e508c1df624_1702204057.jpg?x-oss-process=image/quality,q_95/format,webp"
+    }
+  ],
+  "specialProduct": [
+    {
+      "id": 1,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/1d198a19f4c2fb4086f3b7979e5059bbed823c9b_1661073065.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "376,000",
+      "priceDiscount": "67%",
+      "previousPrice": "980,000"
+    },
+    {
+      "id": 2,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/229c60f2e846776a3114108385beaa9e092c52e6_1699892605.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "18,899,000",
+      "priceDiscount": "7%",
+      "previousPrice": "20,299,000"
+    },
+    {
+      "id": 3,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/2a58d07fbb4d47e21a00cdf0fea26b6ec0dbaf20_1669730800.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "25,999,000",
+      "priceDiscount": "5%",
+      "previousPrice": "27,399,000"
+    },
+    {
+      "id": 4,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/b0214f645db64a9c4b13a042da0136100a82d9a1_1702380265.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "38,099,000",
+      "priceDiscount": "4%",
+      "previousPrice": "39,699,000"
+    },
+    {
+      "id": 5,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/f63ea82d5300e4ab1651c0f490f30f10feeb3f1d_1681803549.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "29,900",
+      "priceDiscount": "54%",
+      "previousPrice": "50,000"
+    },
+    {
+      "id": 6,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/e26084e3ab2c9fb95797e8448a10ee72c4c8765c_1693390255.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "139,000",
+      "priceDiscount": "34%",
+      "previousPrice": "210,000"
+    },
+    {
+      "id": 7,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/c30e9b6f0f8924554722c4fbab972d3c4070b4b3_1683274393.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "34,980",
+      "priceDiscount": "28%",
+      "previousPrice": "48,610"
+    },
+    {
+      "id": 8,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/75ab5e6356dbfa4a4c350357215abe4bc92c5c70_1685428049.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "41,000",
+      "priceDiscount": "27%",
+      "previousPrice": "56,000"
+    },
+    {
+      "id": 9,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/827b353cd2a9c336d3e55fba3c97ea995297e32f_1690197872.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "18,620,000",
+      "priceDiscount": "19%",
+      "previousPrice": "23,100,000"
+    },
+    {
+      "id": 10,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/f9021807a60edaa98f8b76ce12f96c27601ecb20_1674281913.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "4,499,000",
+      "priceDiscount": "13%",
+      "previousPrice": "5,200,000"
+    },
+    {
+      "id": 11,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/72918406250512ca7815cf62e706f23d0fd94768_1663500665.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "79,000",
+      "priceDiscount": "40%",
+      "previousPrice": "140,000"
+    },
+    {
+      "id": 12,
+      "src": "https://dkstatics-public.digikala.com/digikala-products/f2ae285ff906c68596ce94374d9cec46fe6be0cf_1691105603.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+      "price": "288,000",
+      "priceDiscount": "20%",
+      "previousPrice": "360,000"
+    }
+  ],
+  "cart": []
 }
