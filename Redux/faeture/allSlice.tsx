@@ -4,13 +4,15 @@ import { RootState } from "../store";
 
 type initialStateType = {
   filled : boolean,
-  count : number
+  count : number,
+  loading : boolean
 }
 
 
 const initialState : initialStateType = {
   filled : false,
-  count : 0
+  count : 0,
+  loading : false
 }
 
 const allSlice = createSlice({
@@ -22,12 +24,16 @@ const allSlice = createSlice({
       },
       setCount : (state) =>{
         state.count += 1 
+      },
+      setLoading : (state,actiosn:PayloadAction<boolean>) =>{
+        state.loading = actiosn.payload
       }
     },
   });
   
   export const {
     setFilled,
-    setCount
+    setCount,
+    setLoading
   } = allSlice.actions;
   export default allSlice.reducer;
