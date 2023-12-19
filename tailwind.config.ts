@@ -74,6 +74,19 @@ const config: Config = {
             }
         }
       },
+      screens: {
+        'tv': '2200px',
+      },
+      container: {
+        screens : {
+          sm:'640px',
+          md:'768px',
+          lg:'1024px',
+          xl:'1280px',
+          xxl:'1536px',
+          tv: '2200px'
+        }
+      },
   plugins: [],
 }}}
 export default config
