@@ -22,13 +22,13 @@ const DiscountItem = () => {
     }
 
     return ( 
-        <div className="w-full px-14 py-8">
+        <div className="w-full container mx-auto py-8">
             <div className="bg-black  rounded-md bg-opacity-50 rounded-r-lg">
                 <div
-                    className="h-full overflow-auto mx-4 py-3"
+                    className="h-full overflow-auto mx-4"
                 >
                     <div 
-                        className={`w-full overflow-auto  flex flex-row-reverse  gap-2`}
+                        className={`w-full overflow-auto  flex flex-row-reverse  gap-6`}
                         
                         >
 
@@ -36,7 +36,7 @@ const DiscountItem = () => {
                             <div 
                                 key={item.id}
                                 onClick={()=>clickItem(item.id)}
-                                className={`flex flex-col cursor-pointer w-full rounded-md select-none gap-4  bg-white justify-between items-center p-4`} 
+                                className={`flex flex-col my-4 cursor-pointer w-full rounded-md select-none gap-4  bg-white justify-between items-center p-4`} 
                                 >
                                 <div className=" h-2/3">
                                     <Image
@@ -57,7 +57,7 @@ const DiscountItem = () => {
                                         {item.priceDiscount}
                                     </span>
                                 </div>
-                                <div className="text-left w-full">
+                                <div className="text-left line-through w-full">
                                     {item.previousPrice}
                                 </div>
                             </div>

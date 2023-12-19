@@ -5,27 +5,34 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa";
 import { sliderImageType } from "../type";
+import { useAppDispatch } from "@/hook/Redux";
+import { setLoading } from "@/Redux/faeture/allSlice";
 // import {ApiCaller} from "../../services/Api"
 
 const SliderImage = () => {
 
+
+    const dispatch = useAppDispatch()
     const [count,setCount]=useState(1)
     const [slider,setSlider] = useState ([1,2,3,4,5,6])
     const [animate,setAnimate] = useState ('animate-none')
     const [myImage,setMyImage] = useState <sliderImageType|undefined> ()
     const [load,setLoad] = useState<boolean>()
+    const [span,setSpan] = useState<boolean>()
 
      useEffect(()=>{
-            setLoad(true)
-            ApiCaller().getSliderImage()
+         setLoad(true)
+         setSpan(true)
+        ApiCaller().getSliderImage()
             .then(res => {
-                setTimeout(()=>{
                     setMyImage(res.data)
                     setLoad(false)
-                },1500)
+                    setSpan(true)
+                    // dispatch(setLoading(true))
             })
+        dispatch(setLoading(true))
      },[])
-     console.log(count);
+    //  console.log(count);
      
     const arrowRight = () => {
         setAnimate('animate-sliderRight')
@@ -80,23 +87,25 @@ const SliderImage = () => {
                         >
                             <FaArrowRight/>
                         </button>
-                        <div className="w-full flex justify-center  items-center absolute bottom-0 right-0 ">
-                           <div className="flex gap-1 px-2 py-1 mb-1.5 rounded-full bg-white bg-opacity-40">
-                                {slider.map((item,i)=>(
-                                  <div
-                                    onClick={()=>spanClick(i)}
-                                    key={i} 
-                                    className="p-2 flex cursor-pointer"
-                                  >
-                                        <span
-                                        className={`${count == i+1 && 'bg-black bg-opacity-50'} w-2 h-2 rounded-full border border-black`}
-                                        >
-
-                                        </span>
-                                  </div>
-                                ))}
+                        {span && (
+                            <div className="w-full flex justify-center  items-center absolute bottom-0 right-0 ">
+                            <div className="flex gap-1 px-2 py-1 mb-1.5 rounded-full bg-white bg-opacity-40">
+                                 {slider.map((item,i)=>(
+                                   <div
+                                     onClick={()=>spanClick(i)}
+                                     key={i} 
+                                     className="p-2 flex cursor-pointer"
+                                   >
+                                         <span
+                                         className={`${count == i+1 && 'bg-black bg-opacity-50'} w-2 h-2 rounded-full border border-black`}
+                                         >
+ 
+                                         </span>
+                                   </div>
+                                 ))}
+                             </div>
                             </div>
-                           </div>
+                        )}
                     </div>
             </div>
         </div>
