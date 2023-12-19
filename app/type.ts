@@ -26,3 +26,10 @@ export type myNavType = Array<{
     title:string,
     href?:any
 }>
+
+export type stableData = Array <{
+        id: number,
+        href:string,
+        title:string,
+        img:string
+}>
