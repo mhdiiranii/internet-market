@@ -2,7 +2,8 @@ import { StaticImageData } from "next/image"
 
 export type sliderImageType = Array<{
     id:number,
-    src:StaticImageData
+    src:StaticImageData,
+    route:string
 }>
 
 export type discountProductType = Array<{
