@@ -7,7 +7,7 @@ const ApiCaller = () => {
         baseURL: "http://localhost:3004/",
       });
       
-    const getSliderImage = ()=> AxiosRequest.get('sliderImage');
+    const getSliderImage = ()=> AxiosRequest.get(`sliderImage`);
     const getDiscount = ()=> AxiosRequest.get('specialProduct');
     const addCart = (data:cartType)=> AxiosRequest.post('cart',data)
     const getCart = ()=> AxiosRequest.get('cart')
