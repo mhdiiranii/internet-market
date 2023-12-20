@@ -6,7 +6,7 @@ import  Grouping from './(block)/Grouping'
 export default function Home() {
   return (
     <>
-      <SliderImage/>
+      <SliderImage route='home'/>
       <DiscountItem/>
       <Grouping/>
     </>

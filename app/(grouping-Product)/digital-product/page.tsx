@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const DigitalProduct = () => {
     return ( 
         <div>
-            digital
+            <AllPage route="digital"/>
         </div>
      );
 }

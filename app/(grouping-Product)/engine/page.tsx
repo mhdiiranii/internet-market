@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const Engine = () => {
     return ( 
         <div>
-            engine
+            <AllPage route="engine"/>
         </div>
      );
 }

@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const Mobile = () => {
     return ( 
         <div>
-            mobile
+            <AllPage route="mobile"/>
         </div>
      );
 }

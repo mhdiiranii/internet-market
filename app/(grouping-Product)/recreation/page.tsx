@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const Recreation = () => {
     return ( 
         <div>
-            recreation
+            <AllPage route="recreation"/>
         </div>
      );
 }

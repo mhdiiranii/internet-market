@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const SuperMarket = () => {
     return ( 
         <div>
-            super market
+            <AllPage route="superMarket"/>
         </div>
      );
 }

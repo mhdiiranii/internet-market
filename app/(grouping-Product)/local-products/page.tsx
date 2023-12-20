@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const LocalProducts = () => {
     return ( 
         <div>
-            local-products
+            <AllPage route="localProduct"/>
         </div>
      );
 }

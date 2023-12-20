@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const Fashion = () => {
     return ( 
         <div>
-            fashion
+            <AllPage route="fashion"/>
         </div>
      );
 }

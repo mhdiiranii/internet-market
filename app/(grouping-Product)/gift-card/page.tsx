@@ -1,7 +1,9 @@
+import AllPage from "@/app/(block)/AllPage";
+
 const GiftCard = () => {
     return ( 
         <div>
-            gift-card
+            <AllPage route="giftCard"/>
         </div>
      );
 }
